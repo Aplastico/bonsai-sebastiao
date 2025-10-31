@@ -50,6 +50,8 @@
       font-size: 1.1em;
       margin-top: 10px;
       font-style: italic;
+      text-align: justify;
+      text-justify: inter-word;
     }
 
     main {
@@ -78,6 +80,8 @@
       min-width: 280px;
       margin: 15px;
       font-size: 1.1em;
+      text-align: justify;
+      text-justify: inter-word;
     }
 
     .highlight {
@@ -87,6 +91,8 @@
 
     section {
       margin-bottom: 60px;
+      text-align: justify;
+      text-justify: inter-word;
     }
 
     .photo-mid {
@@ -131,6 +137,24 @@
     footer p {
       font-style: italic;
       margin: 5px 0;
+      text-align: center;
+    }
+
+    /* === Justificação de texto global === */
+    p, li {
+      text-align: justify;
+      text-justify: inter-word;
+      white-space: normal;
+      word-break: normal;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    p {
+      text-indent: 1.5em; /* recuo no início do parágrafo */
+      margin-bottom: 1em;
     }
 
     @media (max-width: 700px) {
@@ -155,8 +179,11 @@
     <img src="assets/avo-sorrindo.jpg" alt="Sebastião sorrindo" class="logo">
     <div>
       <h1>🌳 Bonsai de Jaboticabeira</h1>
-      <p>Que esta simples lembrança te agrade e traga paz.<br>
-      Obrigado por fazer parte da minha história e dedicar um tempinho para comemorarmos juntos meus <strong>89 anos</strong>.</p>
+      <p>
+        Que esta simples lembrança te agrade e traga paz.  
+        Obrigado por fazer parte da minha história e dedicar um tempinho para comemorarmos juntos meus 
+        <strong>89 anos</strong>.
+      </p>
     </div>
   </header>
 
@@ -172,10 +199,10 @@
         <p>
           A <span class="highlight">jaboticabeira</span> é árvore de raízes firmes e frutos doces. Representa <span class="highlight">longevidade</span>,  
           <span class="highlight">persistência</span> e a beleza que só vem com os anos.  
-          Assim também é a família: nasce pequena, cresce devagar, cria raízes fortes e floresce na união.
+          Entendi que assim também é a família: nasce pequena, cresce devagar, cria raízes fortes e floresce na união.
         </p>
         <p>
-          Este bonsai é mais do que uma lembrança — é um pedaço de história plantado por mim com amor.  
+          Este bonsai é mais do que uma lembrança — é um pedaço de história semeada por, decicado a você com amor.  
           Que ele leve até você um pouco da calma da roça, do cheiro de terra molhada e do tempo que não tem pressa.
         </p>
       </div>
@@ -214,4 +241,3 @@
   </footer>
 </body>
 </html>
-
