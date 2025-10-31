@@ -10,7 +10,7 @@
       font-family: "Merriweather", serif;
       background-color: #faf9f6;
       color: #2d2d2d;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     header {
@@ -109,6 +109,7 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.25);
     }
 
+    /* === GALERIA === */
     .bonsai-gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -140,7 +141,7 @@
       text-align: center;
     }
 
-    /* === Justificação de texto global === */
+    /* === TEXTO GLOBAL === */
     p, li {
       text-align: justify;
       text-justify: inter-word;
@@ -148,13 +149,32 @@
       word-break: normal;
     }
 
-    ul {
-      padding-left: 20px;
+    p {
+      text-indent: 1.2em;
+      margin-bottom: 1em;
     }
 
-    p {
-      text-indent: 1.5em; /* recuo no início do parágrafo */
-      margin-bottom: 1em;
+    /* === LISTAS PERSONALIZADAS 🍃 === */
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 1em;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 2em;
+      margin-bottom: 0.6em;
+      line-height: 1.7;
+    }
+
+    ul li::before {
+      content: "🍃";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 1.2em;
+      line-height: 1.2;
     }
 
     @media (max-width: 700px) {
@@ -179,11 +199,7 @@
     <img src="assets/avo-sorrindo.jpg" alt="Sebastião sorrindo" class="logo">
     <div>
       <h1>🌳 Bonsai de Jaboticabeira</h1>
-      <p>
-        Que esta simples lembrança te agrade e traga paz.  
-        Obrigado por fazer parte da minha história e dedicar um tempinho para comemorarmos juntos meus 
-        <strong>89 anos</strong>.
-      </p>
+      <p>Que esta simples lembrança te agrade e traga paz. Obrigado por fazer parte da minha história e dedicar um tempinho para comemorarmos juntos meus <strong>89 anos</strong>.</p>
     </div>
   </header>
 
@@ -192,34 +208,21 @@
       <img src="assets/avo-agricultor.png" alt="Sebastião Batista Ferreira agricultor">
       <div class="intro-text">
         <h2>🌱 Raízes que atravessam o tempo</h2>
-        <p>
-          Eu aprendi, ao longo de uma vida inteira na terra, que tudo o que cresce de verdade precisa de <span class="highlight">paciência</span>.  
-          O bonsai é uma lembrança disso. Ele não é apenas uma planta pequena — é uma lição silenciosa sobre o tempo.
-        </p>
-        <p>
-          A <span class="highlight">jaboticabeira</span> é árvore de raízes firmes e frutos doces. Representa <span class="highlight">longevidade</span>,  
-          <span class="highlight">persistência</span> e a beleza que só vem com os anos.  
-          Entendi que assim também é a família: nasce pequena, cresce devagar, cria raízes fortes e floresce na união.
-        </p>
-        <p>
-          Este bonsai é mais do que uma lembrança — é um pedaço de história semeada por, decicado a você com amor.  
-          Que ele leve até você um pouco da calma da roça, do cheiro de terra molhada e do tempo que não tem pressa.
-        </p>
+        <p>Eu aprendi, ao longo de uma vida inteira na terra, que tudo o que cresce de verdade precisa de <span class="highlight">paciência</span>. O bonsai é uma lembrança disso. Ele não é apenas uma planta pequena — é uma lição silenciosa sobre o tempo.</p>
+        <p>A <span class="highlight">jaboticabeira</span> é árvore de raízes firmes e frutos doces. Representa <span class="highlight">longevidade</span>, <span class="highlight">persistência</span> e a beleza que só vem com os anos. Entendi que assim também é a família: nasce pequena, cresce devagar, cria raízes fortes e floresce na união.</p>
+        <p>Este bonsai é mais do que uma lembrança — é um pedaço de história semeada por mim, dedicado a você com amor. Que ele leve até você um pouco da calma da roça, do cheiro de terra molhada e do tempo que não tem pressa.</p>
       </div>
     </section>
 
     <section>
       <h2>🍃 Como cuidar do seu bonsai de jaboticabeira</h2>
-      <p>
-        Cuidar de um bonsai é como cuidar de uma amizade: requer presença e atenção.  
-        Siga estas orientações simples e ele crescerá bonito, forte e cheio de vida:
-      </p>
+      <p>Cuidar de um bonsai é como cuidar de uma amizade: requer presença e atenção. Siga estas orientações simples e ele crescerá bonito, forte e cheio de vida:</p>
       <ul>
-        <li>🌤️ Mantenha o bonsai em local iluminado, com sol suave pela manhã.</li>
-        <li>💧 Regue sempre que o solo estiver levemente seco — nem demais, nem de menos.</li>
-        <li>🌿 Adube a cada dois meses com NPK ou matéria orgânica leve, como húmus de minhoca.</li>
-        <li>✂️ Pode os brotos que crescerem demais, mantendo o formato harmonioso.</li>
-        <li>💨 Deixe o ar circular: bonsais gostam de ambientes ventilados.</li>
+        <li>Mantenha o bonsai em local iluminado, com sol suave pela manhã.</li>
+        <li>Regue sempre que o solo estiver levemente seco — nem demais, nem de menos.</li>
+        <li>Adube a cada dois meses com NPK ou matéria orgânica leve, como húmus de minhoca.</li>
+        <li>Pode os brotos que crescerem demais, mantendo o formato harmonioso.</li>
+        <li>Deixe o ar circular: bonsais gostam de ambientes ventilados.</li>
       </ul>
     </section>
 
